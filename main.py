@@ -41,17 +41,16 @@ def calcucator():
   new_number=math_things(function, first_number, second_number)
   print(new_number)
   response=input(f'Do you want to do another calculation with {new_number}? Type yes or no: ')
-  return response
+  
 
 # we want to take in the first number
 
 print('welcome to my calculator')
 
-if calcucator() == 'yes':
-  number=int(input('please pick a number '))
-  operate=input('Please pick an operator ')
-  function= operations[operate]
-  new_number=math_things(function, new_number, number)
+number=int(input('please pick a number '))
+operate=input('Please pick an operator ')
+function= operations[operate]
+latest_number=math_things(function, new_number, number)
   print(new_number)
   
 
