@@ -28,11 +28,11 @@ def math_things(a, b, c):
 
 
 def calcucator():
-  first_number=int(input('Please enter your first number '))
+  first_number=float(input('Please enter your first number '))
 # pick an operator 
   operate=input('Please pick an operator ')                  
 #take in second number 
-  second_number=int(input('Please enter your second number '))
+  second_number=float(input('Please enter your second number '))
 #then return a calucation
   function= operations[operate]
   new_number=math_things(function, first_number, second_number)
@@ -41,7 +41,7 @@ def calcucator():
   
   while response == 'yes':
     operate=input('Please pick an operator ')                  
-    second_number=int(input('Please enter your second number '))
+    second_number=float(input('Please enter your second number '))
     function= operations[operate]
     new_number=math_things(function, new_number, second_number)
     print(new_number)
